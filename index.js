@@ -5,9 +5,10 @@ const fs = require("fs");
 const admin = ["279509151330074683", "256704545504231424"];
 var prefix = '>';
 
-  bot.on("ready" => {
-  console.log("Online");
+bot.on("ready", () => {
+    console.log("Online");
   });
+
   bot.on("message", message => {
     if (message.author.bot) return;
     if(message.content.indexOf(prefix) !== 0) return;
